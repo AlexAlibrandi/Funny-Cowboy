@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        p {
+            position: fixed; top: 20%; left: 8%;
+            font-size: 40px;
+            color: cornsilk;
+            width: 500px;
+            word-wrap: break-word;
+            font-family: Georgia;
+        }
+
+        body {
+            background-image: url("https://images01.military.com/sites/default/files/styles/full/public/2021-04/chucknorris.jpeg.jpg?itok=2b4A6n29");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            position: fixed; top: 10%; left: 5%;
+        }
+
+        h1 {
+            position: fixed; left: 4%;
+            font-size: 40px;
+            color: cornsilk;
+        }
+    </style>
+    <meta charset="UTF-8" >
+    <title>Chuck Norris Funny cowboy man</title>
+</head>
+<body>
+    <h1>Chuck norris once said.......</h1>
+    <p th:text="${joke}" ></p>
+</body>
+</html>
